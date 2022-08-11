@@ -29,6 +29,8 @@
     --clr-secondary: #093F70; /*azul oscuro*/
     --clr-accent: #18AD97; /*verde agua*/
     --clr-white: #FFFFFF; /*blanco*/ 
+
+    --padding-inline: 2.5vw;
 }
 
 
@@ -108,3 +110,35 @@ select {
   }
 }
 /*FIN DEL RESETEO CSS*/
+
+/* UTILIDADES */
+.invisible {
+  display: none;
+}
+
+/* HEADER */
+header {
+  background-color: var(--clr-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--padding-inline);
+  padding-block: 2.5vw;
+}
+
+.header-logo {
+  width: 124px;
+}
+
+.icon-burguer {
+  height: 14px;
+}
+
+/* HERO */
+.hero {
+  background-image: url("../images/bg-hero_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 180px;
+  min-width: 100%;
+}
