@@ -6,10 +6,11 @@
     --ff-primary: 'Poppins', sans-serif;
     --ff-secondary: 'Poppins', sans-serif;
 
-    --fs-mb-titles: 1rem; /*16pt*/
-    --fs-mb-text-normal: 1.125rem; /*18pt*/
-    --fs-mb-text-medium: 0.875rem; /*14*/
-    --fs-mb-text-small: 0.78rem; /*12,5*/
+    --fs-mb-h1: 1.8rem; /*16pt*/
+    --fs-mb-h2: 1.5rem;
+    --fs-mb-text-normal: 1.5rem; /*24pt*/
+    --fs-mb-text-medium: 1rem; /*14*/
+    --fs-mb-text-small: 0.8rem; /*12,5*/
 
     --fs-tb-titles: 2rem; /*32pt*/
     --fs-tb-text-normal: 2.187rem; /*35pt*/
@@ -29,6 +30,8 @@
     --clr-secondary: #093F70; /*azul oscuro*/
     --clr-accent: #18AD97; /*verde agua*/
     --clr-white: #FFFFFF; /*blanco*/ 
+    --clr-whatsapp-teal: #075E54;
+    --clr-whatsapp-light: #25D366;
 
     --padding-inline: 2.5vw;
 }
@@ -74,6 +77,11 @@ body {
   line-height: 1.5;
 }
 
+/* Set font weight for Hs */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fw-light);
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -116,6 +124,35 @@ select {
   display: none;
 }
 
+body {
+  font-family: var(--ff-primary);
+  color: var(--clr-secondary);
+  font-size: var(--fs-mb-text-normal);
+  font-weight: var(--fw-light);
+}
+
+h2 {
+  font-size: var(--fs-mb-h2);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-primary);
+}
+
+section {
+  padding-inline: var(--padding-inline);
+}
+
+.text-white {
+  color: var(--clr-white);
+}
+
+.text-accent {
+  color: var(--clr-accent);
+}
+
+.text-semibold {
+  font-weight: var(--fw-semibold);
+}
+
 /* HEADER */
 header {
   background-color: var(--clr-primary);
@@ -126,7 +163,7 @@ header {
   padding-block: 2.5vw;
 }
 
-.header-logo {
+.logo-img {
   width: 124px;
 }
 
@@ -136,9 +173,77 @@ header {
 
 /* HERO */
 .hero {
-  background-image: url("../images/bg-hero_1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 180px;
-  min-width: 100%;
+  padding-inline: var(--padding-inline);
+  padding-block: 2.5vw;
+  background-image: linear-gradient(0deg, var(--clr-accent) 0%, var(--clr-primary) 100%);
+  clip-path: ellipse(100% 55% at 48% 44%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .hero-text h1 {
+  font-size: var(--fs-mb-h1);
+  font-weight: var(--fw-light);
+  color: var(--clr-white);
+}
+
+.hero .hero-text button {
+  font-size: var(--fs-mb-text-small);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-secondary);
+  background-color: var(--clr-white);
+  border: none;
+  border-radius: 100px;
+  padding-top: 0.5vw;
+  padding-inline: 2vw;
+  margin-top: 2vw;
+}
+
+.hero .hero-image {
+  max-width: 40vw;
+}
+
+main .main-conozcanos {
+  margin-top: 5vw;
+}
+
+main .main-conozcanos p {
+  margin-bottom: 4vw;
+}
+
+main .main-contactenos-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .main-contactenos-content button {
+  font-size: var(--fs-mb-text-medium);
+  font-weight: var(--fw-light);
+  color: var(--clr-white);
+  background-color: var(--clr-whatsapp-light);
+  border: none;
+  border-radius: 100px;
+  padding-top: 0.5vw;
+  padding-inline: 2vw;
+  margin-top: 2vw;
+}
+
+main .main-contactenos-content img {
+  max-width: 40vw;
+}
+
+footer {
+  margin-top: 4vw;
+  min-height: 25vw;
+  background: rgb(16,115,221);
+  background: linear-gradient(0deg, rgba(16,115,221,1) 0%, rgba(24,173,151,1) 100%);
+  padding-block: 5vw;
+  padding-inline: var(--padding-inline);
+}
+
+footer .footer-email {
+  margin-top: 2vw;
+  font-size: var(--fs-mb-text-medium);
 }

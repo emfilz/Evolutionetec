@@ -11,52 +11,58 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="./images/logo.svg" alt="Logo Evolutionetec" class="header-logo">
-        </div>
+        <img src="./images/logo.svg" alt="Logo Evolutionetec" class="logo-img">
         <nav>
             <img src="./images/icon-burguer.svg" alt="Menú desplegable" class="icon-burguer">
             <ul class="invisible">
-                <li><a href="">Conózcanos</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Beneficios</a></li>
-                <li><a href="">Contáctenos</a></li>
+                <li><a href="#conzcanos">Conózcanos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#contactenos">Contáctenos</a></li>
             </ul>
         </nav>
     </header>
     
     <div class="hero">
-        <h1>Dirección y validación eficiente en incidentes de ciberseguridad.</h1>
-        <button>Contáctenos</button>
+        <div class="hero-text">
+            <h1>Dirección y validación eficiente en incidentes de ciberseguridad.</h1>
+            <button>CONTÁCTENOS</button>
+        </div>
+        <img src="./images/hero-image.svg" alt="" class="hero-image">
     </div>
 
     <main>
-        <section>
+        <section class="main-conozcanos" id="conozcanos">
             <h2>Conózcanos</h2>
-            <p>Asistimos a pequeñas y medianas empresas con los productos de seguridad del mejor TCO de la industria, combinando capacidades comerciales nativas de SIEM con nuestro análisis avanzado e inteligencia de amenazas para la detección de ciberataques.Asistimos a pequeñas y medianas empresas con los productos de seguridad del mejor TCO de la industria, combinando capacidades comerciales nativas de SIEM con nuestro análisis avanzado e inteligencia de amenazas para la detección de ciberataques.</p>
+            <p>Asistimos a pequeñas y medianas empresas con los productos de seguridad del mejor TCO de la industria, combinando capacidades comerciales nativas de SIEM con nuestro análisis avanzado e inteligencia de amenazas para la detección de ciberataques.</p>
             <p>Brindamos servicios de detección y validación de ataques cibernéticos, administración de la plataforma SIEM, casos de uso personalizados, paneles, informes y cobertura 24/7.</p>
         </section>
 
-        <section>
-            <h2>Servicios</h2>
+        <section id="servicios">
+            <h2 class="text-white">Servicios</h2>
             <!-- CAROUSEL -->
         </section>
 
-        <section>
-            <h2>Beneficios</h2>
+        <section id="beneficios">
+            <h2 class="text-white">Beneficios</h2>
             <!-- CARDS -->
         </section>
 
-        <section>
+        <section id="contactenos">
             <h2>Contáctenos</h2>
-            <p>El equipo de expertos de Evolutionetec o asesorará acerca de las mejores opciones en ciberseguridad para su empresa.</p>
-            <button>Whatsapp Evolutionetec</button>
+            <div class="main-contactenos-content">
+                <div>
+                    <p>El equipo de expertos de <span class="text-accent">Evolutionet<span class="text-semibold">ec</span></span> o asesorará acerca de las mejores opciones en ciberseguridad para su empresa.</p>
+                    <button>Whatsapp Evolutionet<span class="text-semibold">ec</span></button>
+                </div>
+                <img src="./images/contactenos-image.svg" alt="">
+            </div>
         </section>
     </main>
 
     <footer>
-        <img src="./images/logo.svg" alt="Logo Evolutionetec"><span>Evolutionetec</span>
-        <p>vulloa@Evolutionetec.com</p>
+        <img src="./images/logo.svg" alt="Logo Evolutionetec" class="logo-img">
+        <p class="footer-email text-white">vulloa@Evolutionetec.com</p>
     </footer>
 </body>
 </html>
