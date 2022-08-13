@@ -6,16 +6,18 @@
     --ff-primary: 'Poppins', sans-serif;
     --ff-secondary: 'Poppins', sans-serif;
 
-    --fs-mb-h1: 1.8rem; /*16pt*/
+    --fs-mb-h1: 1.8rem;
     --fs-mb-h2: 1.5rem;
-    --fs-mb-text-normal: 1.5rem; /*24pt*/
-    --fs-mb-text-medium: 1rem; /*14*/
-    --fs-mb-text-small: 0.8rem; /*12,5*/
+    --fs-mb-text-normal: 1.5rem;
+    --fs-mb-text-medium: 1rem;
+    --fs-mb-text-small: 0.8rem;
 
-    --fs-tb-titles: 2rem; /*32pt*/
-    --fs-tb-text-normal: 2.187rem; /*35pt*/
-    --fs-tb-text-medium: 1.375rem; /*22*/
-    --fs-tb-text-small: 1.687rem; /*27*/
+    --fs-tb-h1: 3rem;
+    --fs-tb-h2: 1.8rem;
+    --fs-tb-text-normal: 2.187rem;
+    --fs-tb-text-medium: 1.375rem;
+    --fs-tb-text-small: 1.8rem;
+    --fs-tb-text-menu: 1.2rem;
 
     --fs-dt-titles: 2.75rem; /*44pt*/
     --fs-dt-text-normal: 2.75rem; /*44pt*/
@@ -120,10 +122,6 @@ select {
 /*FIN DEL RESETEO CSS*/
 
 /* UTILIDADES */
-.invisible {
-  display: none;
-}
-
 body {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
@@ -163,12 +161,16 @@ header {
   padding-block: 2.5vw;
 }
 
-.logo-img {
+header .logo-img {
   width: 124px;
 }
 
-.icon-burguer {
+header .icon-burguer {
   height: 14px;
+}
+
+header nav ul {
+  display: none;
 }
 
 /* HERO */
@@ -204,6 +206,7 @@ header {
   max-width: 40vw;
 }
 
+/* MAIN */
 main .main-conozcanos {
   margin-top: 5vw;
 }
@@ -234,6 +237,8 @@ main .main-contactenos-content img {
   max-width: 40vw;
 }
 
+
+/* FOOTER */
 footer {
   margin-top: 4vw;
   min-height: 25vw;
@@ -246,4 +251,42 @@ footer {
 footer .footer-email {
   margin-top: 2vw;
   font-size: var(--fs-mb-text-medium);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) { /* TABLETS */
+  header .icon-burguer {
+    display: none;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 60vw;
+  }
+
+  header nav ul a {
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: var(--fs-tb-text-menu);
+  }
+
+  .hero .hero-text h1 {
+    font-size: var(--fs-tb-h1);
+  }
+  
+  .hero .hero-text button {
+    font-size: var(--fs-tb-text-small);
+    font-weight: var(--fw-semibold);
+    border-radius: 100px;
+    padding-top: 0.5vw;
+    padding-inline: 2vw;
+    margin-top: 2vw;
+  }
+}
+
+@media screen and (min-width: 900px) { /* DESKTOP */
+  body {
+    background-color: green;
+  }
 }
