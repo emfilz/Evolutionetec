@@ -183,7 +183,8 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  min-height: 250px;
+ }
 
 .hero .hero-text h1 {
   font-size: var(--fs-mb-h1);
