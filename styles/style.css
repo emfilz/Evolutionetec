@@ -6,11 +6,12 @@
     --ff-primary: 'Poppins', sans-serif;
     --ff-secondary: 'Poppins', sans-serif;
 
-    --fs-mb-h1: 1.8rem;
+    --fs-mb-h1: 2.5rem;
     --fs-mb-h2: 1.5rem;
     --fs-mb-text-normal: 1.5rem;
     --fs-mb-text-medium: 1rem;
-    --fs-mb-text-small: 0.8rem;
+    --fs-mb-text-hero-button: 1.2rem;
+    --fs-mb-text-contactenos-button: 1.4rem;
 
     --fs-tb-h1: 3rem;
     --fs-tb-h2: 1.8rem;
@@ -191,7 +192,7 @@ header nav ul {
 }
 
 .hero .hero-text button {
-  font-size: var(--fs-mb-text-small);
+  font-size: var(--fs-mb-text-hero-button);
   font-weight: var(--fw-semibold);
   color: var(--clr-secondary);
   background-color: var(--clr-white);
@@ -203,7 +204,7 @@ header nav ul {
 }
 
 .hero .hero-image {
-  max-width: 40vw;
+  max-width: 35vw;
 }
 
 /* MAIN */
@@ -222,7 +223,7 @@ main .main-contactenos-content {
 }
 
 main .main-contactenos-content button {
-  font-size: var(--fs-mb-text-medium);
+  font-size: var(--fs-mb-text-contactenos-button);
   font-weight: var(--fw-light);
   color: var(--clr-white);
   background-color: var(--clr-whatsapp-light);
@@ -246,6 +247,10 @@ footer {
   background: linear-gradient(0deg, rgba(16,115,221,1) 0%, rgba(24,173,151,1) 100%);
   padding-block: 5vw;
   padding-inline: var(--padding-inline);
+}
+
+footer .logo-img {
+  width: 124px;
 }
 
 footer .footer-email {
@@ -276,7 +281,7 @@ footer .footer-email {
   }
   
   .hero .hero-text button {
-    font-size: var(--fs-tb-text-small);
+    font-size: var(--fs-tb-text-hero-button);
     font-weight: var(--fw-semibold);
     border-radius: 100px;
     padding-top: 0.5vw;
